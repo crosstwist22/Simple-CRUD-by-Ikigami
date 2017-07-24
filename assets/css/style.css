@@ -1,0 +1,868 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/** Standard Typography**/
+html{
+   font-weight: normal;
+   color: rgba(0, 0, 0, 0.87);
+   font-family: 'Roboto', sans-serif;
+
+}
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+body{
+  background-color: #e9e9e9;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+ text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.1rem 0 1.68rem 0;
+}
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0;
+}
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0;
+}
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0;
+}
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 0.82rem 0 0.656rem 0;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 110%;
+  margin: 0.5rem 0 0.4rem 0;
+}
+
+table, th, td {
+  border: none;
+}
+
+table {
+  width: 100%;
+  display: table;
+}
+thead {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+div{
+	margin-bottom: 10px;
+}
+section{
+	display: block;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+textarea {
+  overflow: auto;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+.img-title-container{
+    width: 300px;
+    margin: 0 auto;
+}
+.img-title-container > img{
+    width: 100%;
+    height: 250px;
+}
+.main-card{
+    width: 100%;
+     background-color: white;
+     border: 1px solid transparent;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+.main-card > .container{
+    width: 95%;
+    margin: 2.5% auto;
+}
+.search-bar-position{
+    width: 50%;
+    margin: 0 auto;
+}
+table.bordered > thead > tr,
+table.bordered > tbody > tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+.footer-links{
+    position: fixed;
+    left: 25px;
+    bottom: 120px;
+    width: 75px;
+    height: 75px;
+}
+.footer-links > button{
+    width: 100%;
+    height: 100%;
+    background-color: #03a9f4;
+    border: 0;
+    border-radius: 100%;
+    transition: 0.25s all;
+}
+.footer-links > button > i{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+.footer-links > button:hover{
+    opacity: 0.8;
+}
+.footer-links-left{
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    width: 75px;
+    height: 75px;
+}
+.footer-links-left > button{
+    width: 100%;
+    height: 100%;
+    background-color: #f44336;
+    border: 0;
+    border-radius: 100%;
+    transition: 0.25s all;
+}
+.footer-links-left > button > i{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.footer-links-left > button:hover{
+    opacity: 0.8;
+}
+.footer-links-logout{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 75px;
+    height: 75px;
+}
+.footer-links-logout > button{
+    width: 100%;
+    height: 100%;
+    background-color: #607d8b;
+    border: 0;
+    border-radius: 100%;
+    transition: 0.25s all;
+}
+.footer-links-logout > button:hover{
+      opacity: 0.8;
+}
+.footer-links-logout > button > i{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+}
+.options-button-position{
+    width: 155px;
+    margin: 2.5% auto;
+}
+.options-button-position > #options-buttons{
+    visibility: hidden;
+}
+.options-button-position > #options-buttons + label{
+    padding: 20px;
+    color:  #607d8b;
+    background-color: transparent;
+    transition: 0.25s all;
+    border: 1px solid  #607d8b;
+    cursor: pointer;
+}
+.options-button-position >   #options-buttons + label:hover{
+    color: white;
+    border: 0;
+    background-color: #607d8b;
+}
+.download-button-label{
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+.options-button-list-position{
+    display: none;
+    width: 615px;
+    margin: 0 auto;
+    transition: 0.25s all;
+}
+.options-button-list-position > a{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    transition: 0.25s all;
+    cursor: pointer;
+}
+.options-button-list-position > a > i{
+    margin-right: 15px;
+}
+.options-button-list-position > a:hover{
+    opacity: 0.7;
+}
+#download_csv{
+    background-color: #009688;
+}
+#download_pdf{
+    background-color: #f44336;
+}
+#download_word{
+    background-color: #3f51b5;
+}
+#download_excel{
+    background-color: #4caf50;
+}
+#download_print{
+    background-color: #03a9f4;
+}
+
+/**Modal Login**/
+.login-modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+.login-modal > .login-modal-card{
+    width: 85%;
+    margin: 2.5% auto;
+    background-color: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+.form-login{
+    width: 30%;
+    margin: 0 auto;
+}
+.form-login > h1{
+    text-align: center;
+    font-weight: 200;
+}
+.error-login-prompt{
+    display: none;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #f44336;
+    background-color: #ffcdd2;
+    margin-bottom: 50px;    
+}
+.error-login-prompt > a{
+    color: #f44336;
+    text-align: right;
+    display: block;
+    margin: 3px;
+    transition: 0.25s all;
+}
+.error-login-prompt > a:hover{
+    opacity: 0.75;
+}
+
+.error-login-prompt > p{
+    color: #f44336;
+    margin: -7px 10px;
+}
+.error-login-prompt > p > i{
+    margin-right: 5px;
+}
+#notif_login{
+    text-align: center;
+    color: red;
+}
+/* Text Inputs + Textarea
+   ========================================================================== */
+/* Style Placeholders */
+::-webkit-input-placeholder {
+  color: #d1d1d1;
+}
+
+:-moz-placeholder {
+  color: #d1d1d1;
+}
+
+::-moz-placeholder {
+  color: #d1d1d1;
+}
+
+:-ms-input-placeholder {
+  color: #d1d1d1;
+}
+.form-input{
+  position: relative;
+  margin-top: 1rem;
+}
+.form-input label {
+  color: #9e9e9e;
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  font-size: 1rem;
+  cursor: text;
+  transition: .2s ease-out;
+  text-align: initial;
+}
+
+.active-label{
+   font-size: 0.8rem;
+  -webkit-transform: translateY(-140%);
+  transform: translateY(-140%);
+}
+input[type=text],
+input[type=password]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]){
+    border-bottom: 1px solid #2196f3;
+    box-shadow: 0 1px 0 0  #2196f3;
+}
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label{
+    color:  #2196f3;
+}
+input[type=text].validate + label,
+input[type=password].validate + label{
+     width: 100%;
+     pointer-events: none;
+}
+input[type=text] + label:after,
+input[type=password] + label:after{
+     display: block;
+    content: "";
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    transition: .2s opacity ease-out, .2s color ease-out;
+}
+.form-input-button{
+    width: 20%;
+    margin: 0 auto;
+}
+.form-input-button > button{
+    border: 0;
+    color: white;
+    background-color: #2196f3;
+    padding: 20px 25px;
+    transition: 0.25s all;
+}
+.form-input-button > button:hover{
+    opacity: 0.75;
+}
+.profile-avatar-img{
+    width: 100px;
+    height: 100px;
+}
+.edit_button{
+    text-align: center;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border: 0;
+    transition: 0.25s all;
+    color: white;
+    padding: 15px;
+}
+.delete_link{
+    text-align: center;
+    color: #f44336;
+    cursor: pointer;
+}
+/**Modal File Upload**/
+#close_prompt_file_modal{
+    position: relative;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    transition: 0.25s all;
+}
+#close_prompt_file_modal:hover{
+    opacity: 0.8;
+}
+.modal-file-upload{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+.modal-file-upload > .file-modal-card{
+    width: 85%;
+    margin: 2.5% auto;
+    background-color: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+.modal-file-upload > .file-modal-card > h1{
+    text-align: center;
+    font-weight: 200;
+}
+.file-form-input-position{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.file-upload-content > .container{
+    width: 90%;
+    margin: 0 auto;
+}
+#file-csv{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#file-csv + label{
+    font-size: 1.25em;
+    color: white;
+    background-color: #03a9f4;
+    display: inline-block;
+    padding: 1.1rem;
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+#file-csv:focus + label,
+#file-csv + label:hover {
+    opacity: 0.8;
+}
+#file_name_csv{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.loader-position{
+     width: 50px;
+     margin: 2.5% auto;
+}
+.loader {
+    display: none;
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid #03a9f4; 
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+ }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+            
+
+/**Edit Info Modal**/
+#close_prompt_edit_modal{
+    position: relative;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    transition: 0.25s all;
+}
+#close_prompt_edit_modal:hover{
+    opacity: 0.8;
+}
+
+.modal-edit-info{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75); 
+}
+.modal-edit-info > .edit-info-card{
+     width: 85%;
+    margin: 2.5% auto;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+.edit-info-card > .container{
+    width: 95%;
+    margin: 0 auto;
+}
+.edit-info-card > .container > h1{
+    text-align: center;
+    font-weight: 200;
+}
+#file-image-edit{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#file-image-edit+ label{
+    font-size: 1.25em;
+    color: white;
+    background-color: #03a9f4;
+    display: inline-block;
+    padding: 1.1rem;
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+#file-image-edit:focus + label,
+#file-image-edit + label:hover {
+    opacity: 0.8;
+}
+
+
+
+/**Insert Info**/
+.modal-insert-info{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75); 
+}
+.modal-insert-info > .insert-info-card{
+     width: 85%;
+    margin: 2.5% auto;
+    background-color: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+#close_prompt_insert_modal{
+    position: relative;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    transition: 0.25s all;
+}
+#close_prompt_insert_modal:hover{
+    opacity: 0.8;
+}
+.insert-info-card > .container{
+    width: 90%;
+    margin: 0 auto;
+}
+.insert-info-card > .container > h1{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+.form-container{
+    width: 50%;
+    margin: 2.5% auto;
+}
+.form-container > img{
+    width:100%;
+    height: 300px;
+}
+.file-image-position{
+    width: 100px;
+    margin: 0 auto;
+}
+#file-image{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#file-image + label{
+    font-size: 1.25em;
+    color: white;
+    background-color: #03a9f4;
+    display: inline-block;
+    padding: 1.1rem;
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+#file-image:focus + label,
+#file-image + label:hover {
+    opacity: 0.8;
+}
+#image-upload{
+    margin-bottom: 25px;
+    text-align: center;
+}
+#image-upload_edit{
+    margin-bottom: 25px;
+    text-align: center;
+}
+#image-upload_notif{
+    margin-bottom: 25px;
+    text-align: center;
+}
+#image-upload_notif_edit{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.loader-position{
+     width: 50px;
+     margin: 2.5% auto;
+}
+.loader {
+    display: none;
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid #03a9f4; 
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+ }
+ .select_form{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+ }
+ .button-submit-position{
+    width: 135px;
+    margin: 0 auto;
+ }
+ .button-submit-position > button[type=submit]{
+     font-size: 1.25em;
+    color: white;
+    background-color: #03a9f4;
+    display: inline-block;
+    padding: 1.1rem;
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 25px;
+    border: 0;
+ }
+ .button-submit-position > button[type=submit]:hover{
+     opacity: 0.75;
+ }
+ .loader-insert-position{
+     width: 50px;
+     margin: 0 auto;
+ }
+.loader-insert-position > .loader-insert-data {
+    display: none;
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid #03a9f4; 
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+ }
+ #status_insert{
+     text-align: center;
+     color:#4caf50;
+ }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+/**Delete Form Info**/
+.modal-delete-info{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75); 
+}
+.modal-delete-info > .delete-info-card{
+     width: 85%;
+    margin: 2.5% auto;
+    background-color: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+#close_prompt_delete_modal{
+    position: relative;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    transition: 0.25s all;
+}
+#close_prompt_delete_modal:hover{
+    opacity: 0.8;
+}
+.delete-modal-title{
+     border: 1px solid transparent;
+}
+.loader-delete-position{
+     width: 50px;
+     margin: 0 auto;
+ }
+.loader-delete-position > .loader-delete-data {
+    display: none;
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid #03a9f4; 
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+ }
+.delete-modal-title > h1{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+/**Modal Logout **/
+.modal-logout{
+     display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75); 
+}
+.modal-logout > .modal-logout-card{
+     width: 85%;
+    margin: 2.5% auto;
+    background-color: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+.logout-title{
+     border: 1px solid transparent;
+}
+.logout-title > h1{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.button-logout-choose{
+    width: 175px;
+    margin: 2.5% auto;
+}
+.button-logout-choose > button{
+    border: 0;
+    padding: 20px 15px;
+    color: white;
+    text-align: center;
+    transition: 0.25s all;
+    cursor: pointer;
+}
+.button-logout-choose > button:hover{
+    opacity: 0.7;
+}
+#logout_procced{
+    background-color: #f44336;
+}
+#logout_close{
+    background-color: #009688;
+}
+.button-delete-position{
+    width: 125px;
+    margin: 2.5% auto;
+}
+.button-delete-position > button{
+    border: 0;
+    padding: 20px 15px;
+    color: white;
+    text-align: center;
+    transition: 0.25s all;
+    cursor: pointer;
+}
+#delete_proceed{
+    background-color: #f44336;
+}
+#delete_modal_close{
+    background-color: #009688;
+}
